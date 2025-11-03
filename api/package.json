@@ -6,7 +6,7 @@
     "dev": "npx nodemon server.js"
   },
   "keywords": [],
-  "author": "Beatriz Vizeu",
+  "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {

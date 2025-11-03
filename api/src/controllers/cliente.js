@@ -6,6 +6,15 @@ const read = async (req, res) => {
     res.json(clientes);
 };
 
-module.exports = {
-    read
+const create = async (req, res) => {
+    const { nome } = req.body;
+    const cliente = await prisma.cliente.create({
+        data: { nome }
+    });
+    res.json(cliente);
+};
+
+module.exports = { 
+    read, 
+    create 
 };
